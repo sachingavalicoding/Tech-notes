@@ -1,7 +1,11 @@
+import TopicsLinks from "./TopicsLinks"
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <>
+    Hero page 
+    <TopicsLinks />
+    </>
   )
 }
 
