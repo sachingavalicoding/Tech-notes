@@ -4,6 +4,8 @@ import Register from "./auth/Register.jsx";
 import Home from "./home/Home.jsx";
 import Navbar from "./components/Navbar.jsx";
 import Footer from "./components/Footer.jsx";
+import Topic from "./components/Topic.jsx";
+import Details from "./components/Details.jsx";
 const App = () => {
   return (
     <BrowserRouter>
@@ -12,6 +14,8 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="login" element={<Login />} />
         <Route path="register" element={<Register />} />
+        <Route path="/topics/:featureId" element={<Topic />} />
+        <Route path="/details/:topicId" element={<Details />} />
       </Routes>
       <Footer />
     </BrowserRouter>

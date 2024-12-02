@@ -1,7 +1,12 @@
+import Features from "./Features"
+import HeroSection from "./HeroSection"
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <>
+    <HeroSection />
+    <Features />
+    </>
   )
 }
 

@@ -1,0 +1,281 @@
+{
+    "features": [
+      {
+        "id": "html",
+        "name": "HTML",
+        "description": "Learn the structure of web pages with HTML.",
+        "topics": [
+          {
+            "id": "html-intro",
+            "name": "Introduction to HTML",
+            "description": "HTML is the building block of web pages.",
+            "programs": [
+              {
+                "title": "HTML Structure Example",
+                "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <title>My HTML Page</title>\n  </head>\n  <body>\n    <h1>Hello World</h1>\n  </body>\n</html>"
+              }
+            ],
+            "assignments": [
+              {
+                "title": "Create a Basic Web Page",
+                "details": "Design a webpage with a title, heading, and a paragraph."
+              }
+            ]
+          },
+          {
+            "id": "html-forms",
+            "name": "HTML Forms",
+            "description": "Learn to create interactive forms using HTML.",
+            "programs": [
+              {
+                "title": "HTML Form Example",
+                "code": "<form>\n  <label for=\"name\">Name:</label>\n  <input type=\"text\" id=\"name\" name=\"name\">\n  <button type=\"submit\">Submit</button>\n</form>"
+              }
+            ],
+            "assignments": [
+              {
+                "title": "Create a Registration Form",
+                "details": "Create a form with fields for name, email, and password."
+              }
+            ]
+          },
+          {
+            "id": "html-tables",
+            "name": "HTML Tables",
+            "description": "Organize data in a tabular format using tables.",
+            "programs": [
+              {
+                "title": "HTML Table Example",
+                "code": "<table>\n  <tr>\n    <th>Name</th>\n    <th>Age</th>\n  </tr>\n  <tr>\n    <td>John</td>\n    <td>25</td>\n  </tr>\n</table>"
+              }
+            ],
+            "assignments": [
+              {
+                "title": "Create a Student Table",
+                "details": "Design a table displaying student names and scores."
+              }
+            ]
+          },
+          {
+            "id": "html-lists",
+            "name": "HTML Lists",
+            "description": "Learn about ordered and unordered lists.",
+            "programs": [
+              {
+                "title": "HTML List Example",
+                "code": "<ul>\n  <li>Item 1</li>\n  <li>Item 2</li>\n</ul>\n<ol>\n  <li>Step 1</li>\n  <li>Step 2</li>\n</ol>"
+              }
+            ],
+            "assignments": [
+              {
+                "title": "Create a To-Do List",
+                "details": "Use an unordered list to display a to-do list."
+              }
+            ]
+          },
+          {
+            "id": "html-media",
+            "name": "HTML Media",
+            "description": "Embed images, videos, and audio in your web pages.",
+            "programs": [
+              {
+                "title": "HTML Image Example",
+                "code": "<img src=\"image.jpg\" alt=\"Example Image\">"
+              }
+            ],
+            "assignments": [
+              {
+                "title": "Add an Image to Your Page",
+                "details": "Embed an image and provide alternative text."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "css",
+        "name": "CSS",
+        "description": "Style your web pages with CSS.",
+        "topics": [
+          {
+            "id": "css-intro",
+            "name": "Introduction to CSS",
+            "description": "CSS helps style your web pages beautifully.",
+            "programs": [
+              {
+                "title": "CSS Basics Example",
+                "code": "body {\n  background-color: lightblue;\n}"
+              }
+            ],
+            "assignments": [
+              {
+                "title": "Change Background Color",
+                "details": "Set the background color of a webpage to light blue."
+              }
+            ]
+          },
+          {
+            "id": "css-selectors",
+            "name": "CSS Selectors",
+            "description": "Learn to target HTML elements with CSS selectors.",
+            "programs": [
+              {
+                "title": "CSS Selectors Example",
+                "code": "p {\n  color: red;\n}\n#header {\n  font-size: 24px;\n}\n.class {\n  text-align: center;\n}"
+              }
+            ],
+            "assignments": [
+              {
+                "title": "Style Different Elements",
+                "details": "Use IDs and classes to style specific elements."
+              }
+            ]
+          },
+          {
+            "id": "css-flexbox",
+            "name": "CSS Flexbox",
+            "description": "Learn to create flexible layouts using Flexbox.",
+            "programs": [
+              {
+                "title": "Flexbox Example",
+                "code": "div {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}"
+              }
+            ],
+            "assignments": [
+              {
+                "title": "Create a Centered Layout",
+                "details": "Center a div both horizontally and vertically."
+              }
+            ]
+          },
+          {
+            "id": "css-grid",
+            "name": "CSS Grid",
+            "description": "Build complex layouts with CSS Grid.",
+            "programs": [
+              {
+                "title": "CSS Grid Example",
+                "code": "div {\n  display: grid;\n  grid-template-columns: repeat(3, 1fr);\n}"
+              }
+            ],
+            "assignments": [
+              {
+                "title": "Design a Grid Layout",
+                "details": "Create a grid with three columns and two rows."
+              }
+            ]
+          },
+          {
+            "id": "css-animation",
+            "name": "CSS Animation",
+            "description": "Add animations to your web pages.",
+            "programs": [
+              {
+                "title": "CSS Animation Example",
+                "code": "@keyframes example {\n  from {background-color: red;}\n  to {background-color: yellow;}\n}\ndiv {\n  animation: example 3s infinite;\n}"
+              }
+            ],
+            "assignments": [
+              {
+                "title": "Animate a Box",
+                "details": "Create a box that changes color over time."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "javascript",
+        "name": "JavaScript",
+        "description": "Add interactivity to your web pages with JavaScript.",
+        "topics": [
+          {
+            "id": "js-basics",
+            "name": "JavaScript Basics",
+            "description": "Learn basic syntax and variables in JavaScript.",
+            "programs": [
+              {
+                "title": "JS Basics Example",
+                "code": "let message = 'Hello, World!';\nconsole.log(message);"
+              }
+            ],
+            "assignments": [
+              {
+                "title": "Display a Message",
+                "details": "Create a script that logs a message to the console."
+              }
+            ]
+          },
+          {
+            "id": "js-functions",
+            "name": "JavaScript Functions",
+            "description": "Learn to create and call functions in JavaScript.",
+            "programs": [
+              {
+                "title": "Function Example",
+                "code": "function greet(name) {\n  return 'Hello, ' + name;\n}\nconsole.log(greet('Alice'));"
+              }
+            ],
+            "assignments": [
+              {
+                "title": "Create a Greeting Function",
+                "details": "Write a function that returns a greeting message."
+              }
+            ]
+          },
+          {
+            "id": "js-dom",
+            "name": "JavaScript DOM",
+            "description": "Manipulate the DOM with JavaScript.",
+            "programs": [
+              {
+                "title": "DOM Manipulation Example",
+                "code": "document.getElementById('demo').innerHTML = 'Hello DOM';"
+              }
+            ],
+            "assignments": [
+              {
+                "title": "Modify DOM Elements",
+                "details": "Change the text of a paragraph element with JavaScript."
+              }
+            ]
+          },
+          {
+            "id": "js-events",
+            "name": "JavaScript Events",
+            "description": "Handle user interactions with events.",
+            "programs": [
+              {
+                "title": "Event Listener Example",
+                "code": "document.getElementById('btn').addEventListener('click', function() {\n  alert('Button clicked!');\n});"
+              }
+            ],
+            "assignments": [
+              {
+                "title": "Add a Click Event",
+                "details": "Create a button that shows an alert on click."
+              }
+            ]
+          },
+          {
+            "id": "js-array",
+            "name": "JavaScript Arrays",
+            "description": "Work with arrays in JavaScript.",
+            "programs": [
+              {
+                "title": "Array Example",
+                "code": "let fruits = ['Apple', 'Banana', 'Cherry'];\nconsole.log(fruits.join(', '));"
+              }
+            ],
+            "assignments": [
+              {
+                "title": "Manipulate Arrays",
+                "details": "Write a script to add and remove items from an array."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  
