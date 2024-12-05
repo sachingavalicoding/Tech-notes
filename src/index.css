@@ -1,3 +1,47 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root{
+    color-scheme: dark;
+    font-family: sans-serif;
+}
+
+.note-item h2 {
+    font-size: 2rem;
+    color: white;
+    font-weight: 600;
+    margin: 10px ;
+}
+.note-item p {
+    font-size: 1rem;
+    padding: 10px 15px;
+    color: rgb(210, 210, 210);
+}
+.note-example{
+    margin: 10px 0px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.note-example h3 {
+    background-color: rgb(25, 24, 24);
+    color: rgb(139, 138, 138);
+    font-size: 1.4rem;
+    padding: 4px 8px;
+}
+
+.note-example pre{
+    padding: 6px 16px;
+    color: rgb(80, 173, 249);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow-x: auto;
+    font-size: 1.3rem;
+}
+
+.note-example pre > h1 {
+   color: white;
+}
