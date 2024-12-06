@@ -1,11 +1,12 @@
 import { useParams } from "react-router-dom";
 import { useNotes } from "../../contexts/DataContext";
-import { useState , useEffect } from "react";
+import { useState, useEffect } from "react";
+
 const LanguageLayout = () => {
-  const { language } = useParams();  // Get the language from the URL
+  const { language } = useParams(); // Get the language from the URL
   const { content, setSelectLanguage } = useNotes();
   const [activeTab, setActiveTab] = useState("notes");
-
+  console.log(content);
   useEffect(() => {
     // Set the selected language in the context
     setSelectLanguage(language);
@@ -17,8 +18,6 @@ const LanguageLayout = () => {
 
   return (
     <div className="w-full h-full p-6">
-      <h1 className="text-2xl font-bold mb-4">{language.toUpperCase()} Web Development Info</h1>
-
       {/* Tabs */}
       <div className="mb-4">
         <button
@@ -48,59 +47,17 @@ const LanguageLayout = () => {
       </div>
 
       {/* Content Section */}
-      <div>
-        {activeTab === "notes" && (
-          <div>
-            <h2 className="text-xl font-semibold mb-2">Notes</h2>
-            <ul>
-              {content.notes.length === 0 ? (
-                <li>No notes available</li>
-              ) : (
-                content.notes.map((note, index) => <li key={index}>{note}</li>)
-              )}
-            </ul>
-          </div>
+      <main className="w-full min-h-screen pt-16 px-4 flex flex-col">
+        {content[activeTab] && content[activeTab].length > 0 ? (
+          content[activeTab].map((item, index) => (
+            <article key={index} className="note-item flex flex-col justify-center">
+              <div dangerouslySetInnerHTML={{ __html: item.content }} />
+            </article>
+          ))
+        ) : (
+          <p>No {activeTab} available for this language.</p>
         )}
-
-        {activeTab === "assignments" && (
-          <div>
-            <h2 className="text-xl font-semibold mb-2">Assignments</h2>
-            <ul>
-              {content.assignments.length === 0 ? (
-                <li>No assignments available</li>
-              ) : (
-                content.assignments.map((assignment, index) => <li key={index}>{assignment}</li>)
-              )}
-            </ul>
-          </div>
-        )}
-
-        {activeTab === "programs" && (
-          <div>
-            <h2 className="text-xl font-semibold mb-2">Programs</h2>
-            <ul>
-              {content.programs.length === 0 ? (
-                <li>No programs available</li>
-              ) : (
-                content.programs.map((program, index) => <li key={index}>{program}</li>)
-              )}
-            </ul>
-          </div>
-        )}
-
-        {activeTab === "projects" && (
-          <div>
-            <h2 className="text-xl font-semibold mb-2">Projects</h2>
-            <ul>
-              {content.projects.length === 0 ? (
-                <li>No projects available</li>
-              ) : (
-                content.projects.map((project, index) => <li key={index}>{project}</li>)
-              )}
-            </ul>
-          </div>
-        )}
-      </div>
+      </main>
     </div>
   );
 };

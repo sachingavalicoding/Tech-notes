@@ -16,10 +16,9 @@ export const DataProvider = ({ children }) => {
   });
 
   const [filter, setFilter] = useState([]);
-
-  // Update the content based on selected language
+  console.log(selectLanguage);
+  console.log(data);
   useEffect(() => {
-    // Filter and set data based on selected language
     const selectedData = data[selectLanguage] || {}; // Defaults to empty if language data doesn't exist
 
     setContent({
@@ -28,7 +27,7 @@ export const DataProvider = ({ children }) => {
       programs: selectedData.programs || [],
       projects: selectedData.projects || [],
     });
-  }, [selectLanguage]); // Re-run the effect whenever `selectLanguage` changes
+  }, [selectLanguage, setContent]); // Re-run the effect whenever `selectLanguage` changes
 
   return (
     <DataContext.Provider

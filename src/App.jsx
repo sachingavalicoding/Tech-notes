@@ -1,6 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ReactLayout from "./pages/react/ReactLayout";
-import SmNav from "./Components/SmNav";
 import LanguageGrid from "./Components/LanguageGrid";
 // import HomeLayout from "./pages/home/HomeLayout";
 import LanguageLayout from "./pages/react/LanguageLayout";
@@ -12,7 +11,6 @@ const App = () => {
           <Route path="/" element={<LanguageGrid />} />
           <Route path="/:language" element={<LanguageLayout />} />
         </Routes>
-        <SmNav />
     </BrowserRouter>
   );
 };
