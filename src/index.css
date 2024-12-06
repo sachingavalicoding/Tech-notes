@@ -4,7 +4,7 @@
 
 :root{
     color-scheme: dark;
-    font-family: sans-serif;
+    font-family: "Poppins", serif;
 }
 
 html {
@@ -42,7 +42,7 @@ pre {
     color: #f8f8f2; 
     padding: 1rem;
     border-radius: 8px;
-    font-family: 'Fira Code', monospace; 
+    font-family: "Poppins", serif;
     font-size: 14px;
     overflow-x: auto; 
     line-height: 1.6; 

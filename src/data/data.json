@@ -1,0 +1,123 @@
+{
+    "notes": [
+      {
+        "react": [
+          {
+            "id": 1,
+            "title": "What is React?",
+            "content": "<div><h2 class=\"note-title\">What is React?</h2><p class=\"note-description\">React is a <strong>JavaScript library</strong> for building user interfaces. It allows developers to create reusable UI components and manage the state of web applications efficiently.</p><div class=\"note-example\"><h3>Example:</h3><pre><span class=\"keyword\">import</span> React <span class=\"keyword\">from</span> <span class=\"string\">'react'</span>;\n\n<span class=\"keyword\">function</span> <span class=\"function-name\">App</span>() {\n  <span class=\"tag\">&lt;div</span><span class=\"tag\">&gt;</span>\n    <span class=\"keyword\">return</span> <span class=\"tag\">&lt;h1&gt;</span>Hello, React!<span class=\"tag\">&lt;/h1&gt;</span>;\n  <span class=\"tag\">&lt;/div&gt;</span>\n}\n\n<span class=\"keyword\">export default</span> <span class=\"function-name\">App</span>;</pre></div><a href=\"https://reactjs.org/\" target=\"_blank\" class=\"note-link\">Learn more on the official React documentation</a></div>"
+          }
+        ],
+        "html": [
+          {
+            "id": 1,
+            "title": "What is HTML?",
+            "content": "<div><h2 class=\"note-title\">What is HTML?</h2><p class=\"note-description\">HTML stands for <strong>HyperText Markup Language</strong>. It is the standard markup language for creating web pages and web applications.</p><div class=\"note-example\"><h3>Example:</h3><pre><span class=\"tag\">&lt;!DOCTYPE html&gt;</span>\n<span class=\"tag\">&lt;html&gt;</span>\n  <span class=\"tag\">&lt;head&gt;</span>\n    <span class=\"tag\">&lt;title&gt;</span>My Page<span class=\"tag\">&lt;/title&gt;</span>\n  <span class=\"tag\">&lt;/head&gt;</span>\n  <span class=\"tag\">&lt;body&gt;</span>\n    <span class=\"tag\">&lt;h1&gt;</span>Welcome to HTML<span class=\"tag\">&lt;/h1&gt;</span>\n  <span class=\"tag\">&lt;/body&gt;</span>\n<span class=\"tag\">&lt;/html&gt;</span></pre></div><a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML\" target=\"_blank\" class=\"note-link\">Learn more about HTML</a></div>"
+          },
+          {
+            "id": 2,
+            "title": "HTML Tags and Attributes",
+            "content": "<div><h2 class=\"note-title\">HTML Tags and Attributes</h2><p class=\"note-description\">HTML uses <strong>tags</strong> to define elements and <strong>attributes</strong> to provide additional information about elements.</p><div class=\"note-example\"><h3>Example:</h3><pre><span class=\"tag\">&lt;img</span> src=\"image.jpg\" alt=\"Example Image\" width=\"300\"<span class=\"tag\">&gt;</span></pre></div><a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element\" target=\"_blank\" class=\"note-link\">Learn more about HTML Elements</a></div>"
+          },
+          {
+            "id": 3,
+            "title": "HTML Forms",
+            "content": "<div><h2 class=\"note-title\">HTML Forms</h2><p class=\"note-description\">Forms in HTML are used to collect user input. The <strong>&lt;form&gt;</strong> element is the container for form controls such as input fields, checkboxes, and submit buttons.</p><div class=\"note-example\"><h3>Example:</h3><pre><span class=\"tag\">&lt;form</span> action=\"/submit\" method=\"post\"<span class=\"tag\">&gt;</span>\n  <span class=\"tag\">&lt;input</span> type=\"text\" name=\"username\" placeholder=\"Enter your name\" required<span class=\"tag\">&gt;</span>\n  <span class=\"tag\">&lt;button</span> type=\"submit\"<span class=\"tag\">&gt;</span>Submit<span class=\"tag\">&lt;/button&gt;</span>\n<span class=\"tag\">&lt;/form&gt;</span></pre></div><a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form\" target=\"_blank\" class=\"note-link\">Learn more about HTML Forms</a></div>"
+          }
+        ],
+        "css": [
+          {
+            "id": 1,
+            "title": "What is CSS?",
+            "content": "<div><h2 class=\"note-title\">What is CSS?</h2><p class=\"note-description\">CSS stands for <strong>Cascading Style Sheets</strong>. It is used to style and layout web pages, including adjusting fonts, colors, spacing, and positioning.</p><div class=\"note-example\"><h3>Example:</h3><pre><span class=\"selector\">body</span> {\n  <span class=\"property\">background-color:</span> <span class=\"value\">#f0f0f0</span>;\n  <span class=\"property\">color:</span> <span class=\"value\">#333</span>;\n  <span class=\"property\">font-family:</span> <span class=\"value\">Arial, sans-serif</span>;\n}</pre></div><a href=\"https://developer.mozilla.org/en-US/docs/Web/CSS\" target=\"_blank\" class=\"note-link\">Learn more about CSS</a></div>"
+          },
+          {
+            "id": 2,
+            "title": "CSS Selectors",
+            "content": "<div><h2 class=\"note-title\">CSS Selectors</h2><p class=\"note-description\">CSS Selectors are patterns used to select the elements you want to style.</p><div class=\"note-example\"><h3>Example:</h3><pre><span class=\"selector\">.class-name</span> {\n  <span class=\"property\">color:</span> <span class=\"value\">blue</span>;\n}</pre></div><a href=\"https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors\" target=\"_blank\" class=\"note-link\">Learn more about CSS Selectors</a></div>"
+          },
+          {
+            "id": 3,
+            "title": "CSS Flexbox",
+            "content": "<div><h2 class=\"note-title\">CSS Flexbox</h2><p class=\"note-description\">Flexbox is a layout model that provides an easy way to align and distribute space among items in a container.</p><div class=\"note-example\"><h3>Example:</h3><pre><span class=\"selector\">.container</span> {\n  <span class=\"property\">display:</span> <span class=\"value\">flex</span>;\n  <span class=\"property\">justify-content:</span> <span class=\"value\">center</span>;\n  <span class=\"property\">align-items:</span> <span class=\"value\">center</span>;\n}</pre></div><a href=\"https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox\" target=\"_blank\" class=\"note-link\">Learn more about Flexbox</a></div>"
+          }
+        ]
+      }
+    ],
+    "assignments": [
+      {
+        "react": [
+          {
+            "id": 1,
+            "title": "Create a React App",
+            "content": "Create a simple React application using `create-react-app` and display a 'Hello World' message in the browser."
+          }
+        ],
+        "html": [
+          {
+            "id": 1,
+            "title": "HTML Form Assignment",
+            "content": "Create a basic HTML form that includes text inputs, a checkbox, and a submit button."
+          }
+        ],
+        "css": [
+          {
+            "id": 1,
+            "title": "CSS Flexbox Layout",
+            "content": "Create a responsive web page layout using CSS Flexbox. The page should have a header, content area, and footer, all aligned properly."
+          }
+        ]
+      }
+    ],
+    "program": [
+      {
+        "react": [
+          {
+            "id": 1,
+            "title": "What is React?",
+            "content": "<div><h2 class=\"note-title\">What is React?</h2><p class=\"note-description\">React is a <strong>JavaScript library</strong> for building user interfaces. It allows developers to create reusable UI components and manage the state of web applications efficiently.</p><div class=\"note-example\"><h3>Example:</h3><pre><span class=\"keyword\">import</span> React <span class=\"keyword\">from</span> <span class=\"string\">'react'</span>;\n\n<span class=\"keyword\">function</span> <span class=\"function-name\">App</span>() {\n  <span class=\"tag\">&lt;div</span><span class=\"tag\">&gt;</span>\n    <span class=\"keyword\">return</span> <span class=\"tag\">&lt;h1&gt;</span>Hello, React!<span class=\"tag\">&lt;/h1&gt;</span>;\n  <span class=\"tag\">&lt;/div&gt;</span>\n}\n\n<span class=\"keyword\">export default</span> <span class=\"function-name\">App</span>;</pre></div><a href=\"https://reactjs.org/\" target=\"_blank\" class=\"note-link\">Learn more on the official React documentation</a></div>"
+          }
+        ],
+        "html": [
+          {
+            "id": 1,
+            "title": "HTML Tags and Attributes",
+            "content": "<div><h2 class=\"note-title\">HTML Tags and Attributes</h2><p class=\"note-description\">HTML uses <strong>tags</strong> to define elements and <strong>attributes</strong> to provide additional information about elements.</p><div class=\"note-example\"><h3>Example:</h3><pre><span class=\"tag\">&lt;img</span> src=\"image.jpg\" alt=\"Example Image\" width=\"300\"<span class=\"tag\">&gt;</span></pre></div><a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element\" target=\"_blank\" class=\"note-link\">Learn more about HTML Elements</a></div>"
+          }
+        ],
+        "css": [
+          {
+            "id": 1,
+            "title": "CSS Selectors",
+            "content": "<div><h2 class=\"note-title\">CSS Selectors</h2><p class=\"note-description\">CSS Selectors are patterns used to select the elements you want to style.</p><div class=\"note-example\"><h3>Example:</h3><pre><span class=\"selector\">.class-name</span> {\n  <span class=\"property\">color:</span> <span class=\"value\">blue</span>;\n}</pre></div><a href=\"https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors\" target=\"_blank\" class=\"note-link\">Learn more about CSS Selectors</a></div>"
+          }
+        ]
+      }
+    ],
+    "project": [
+      {
+        "react": [
+          {
+            "id": 1,
+            "title": "React Blog Website",
+            "content": "Create a simple blog website using React. It should allow users to create, view, and delete blog posts."
+          }
+        ],
+        "html": [
+          {
+            "id": 1,
+            "title": "HTML Contact Form",
+            "content": "Create a contact form using HTML that includes fields for name, email, and message, with validation."
+          }
+        ],
+        "css": [
+          {
+            "id": 1,
+            "title": "Responsive Portfolio Website",
+            "content": "Create a responsive portfolio website using HTML and CSS that looks good on both mobile and desktop screens."
+          }
+        ]
+      }
+    ]
+  }
+  

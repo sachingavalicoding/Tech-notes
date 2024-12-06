@@ -1,7 +1,6 @@
 import { FaReact } from "react-icons/fa";
 import { RiMenu5Line, RiCloseLine } from "react-icons/ri";
 import { FiSearch } from "react-icons/fi";
-import { MdOutlineWbSunny } from "react-icons/md";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useNotes } from "../contexts/NotesContext";
@@ -36,12 +35,7 @@ const Navbar = () => {
   return (
     <>
       <nav className="w-full py-3 px-4 flex items-center justify-between bg-slate-950 z-20 fixed top-0 left-0 shadow-md shadow-emerald-500">
-        <div className="flex items-center gap-4 text-2xl">
-          {isOpen ? (
-            <RiCloseLine onClick={() => setIsOpen(false)} className="cursor-pointer" />
-          ) : (
-            <RiMenu5Line onClick={() => setIsOpen(true)} className="cursor-pointer" />
-          )}
+        <div className="flex items-center text-2xl">
           <FaReact className="text-emerald-500 text-4xl" />
         </div>
         <div className="flex items-center gap-4 text-2xl">
@@ -58,7 +52,17 @@ const Navbar = () => {
               onClick={() => handleSearch(searchQuery)}
             />
           </div>
-          <MdOutlineWbSunny />
+          {isOpen ? (
+            <RiCloseLine
+              onClick={() => setIsOpen(false)}
+              className="cursor-pointer"
+            />
+          ) : (
+            <RiMenu5Line
+              onClick={() => setIsOpen(true)}
+              className="cursor-pointer"
+            />
+          )}
         </div>
       </nav>
 

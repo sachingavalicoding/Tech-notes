@@ -1,9 +1,9 @@
-import ReactLayout from "../react/ReactLayout"
+import LanguageGrid from "../../Components/LanguageGrid"
 
 const HomeLayout = () => {
   return (
     <div>
-        <ReactLayout  />
+        <LanguageGrid />
     </div>
   )
 }
