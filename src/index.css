@@ -36,19 +36,6 @@ html {
     padding: 4px 8px;
 }
 
-/* .note-example pre{
-    padding: 6px 16px;
-    color: rgb(80, 173, 249);
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    overflow-x: auto;
-    font-size: 1.3rem;
-}
-
-.note-example pre > h1 {
-   color: white;
-} */
 
 pre {
     background-color: #2d2d2d; 
@@ -87,3 +74,6 @@ pre {
     color: #f92672; 
   }
   
+
+  /*  icons  */
+
