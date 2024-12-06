@@ -1,11 +1,13 @@
-import ReactLayout from "./pages/react/ReactLayout"
-
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import ReactLayout from "./pages/react/ReactLayout";
 const App = () => {
   return (
-    <>
-      <ReactLayout />
-    </>
-  )
-}
+    <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<ReactLayout />} />
+        </Routes>
+    </BrowserRouter>
+  );
+};
 
-export default App
+export default App;
