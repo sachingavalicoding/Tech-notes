@@ -1,4 +1,4 @@
-export const reactNotes = [
+export const WebNotes = [
     {
       react: [
         {
@@ -97,7 +97,7 @@ export const reactNotes = [
           assignment: [
             {
               id: 1,
-              title: "What is React?",
+              title: "What is Assignment?",
               content: `
                 <div>
                   <h2 class="note-title">What is React?</h2>
@@ -190,7 +190,7 @@ export const reactNotes = [
           program: [
             {
               id: 1,
-              title: "What is React?",
+              title: "What is Program?",
               content: `
                 <div>
                   <h2 class="note-title">What is React?</h2>
@@ -282,7 +282,7 @@ export const reactNotes = [
           project: [
             {
               id: 1,
-              title: "What is React?",
+              title: "What is project",
               content: `
                 <div>
                   <h2 class="note-title">What is React?</h2>
