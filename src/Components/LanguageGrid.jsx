@@ -1,11 +1,11 @@
 import { IoLogoCss3, IoLogoHtml5, IoLogoJavascript } from "react-icons/io";
 import { IoLogoReact } from "react-icons/io5";
-import { useNavigate } from "react-router-dom"; // Importing useNavigate
-import { useNotes } from "../contexts/DataContext"; // Importing useNotes hook
+import { useNavigate } from "react-router-dom";
+import { useNotes } from "../contexts/DataContext"; 
 
 const LanguageGrid = () => {
   const navigate = useNavigate();
-  const { setSelectLanguage } = useNotes(); // Using the useNotes hook to access setSelectLanguage
+  const { setSelectLanguage } = useNotes();
 
   const data = [
     {
@@ -34,23 +34,22 @@ const LanguageGrid = () => {
     },
   ];
 
-  // Function to handle language selection and navigation
   const handleLanguageClick = (link) => {
-    setSelectLanguage(link); // Set the selected language in context
-    navigate(`/${link}`); // Navigate to the corresponding page
+    setSelectLanguage(link);
+    navigate(`/${link}`);
   };
 
   return (
-    <section className="w-full h-screen flex items-center justify-center">
-      <div className="grid grid-cols-2 border-2 gap-6 justify-center p-10">
+    <section className="w-full h-screen flex items-center justify-center bg-darkGray">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-6 p-10">
         {data.map((ele) => (
           <article
             key={ele.id}
-            onClick={() => handleLanguageClick(ele.link)} // Use the handler to set language and navigate
-            className="flex flex-col w-36 h-36 justify-center items-center bg-slate-950 shadow-md shadow-emerald-500 gap-4 cursor-pointer"
+            onClick={() => handleLanguageClick(ele.link)}
+            className="flex flex-col w-36 h-36 justify-center items-center bg-slate-950 shadow-xl shadow-emerald-500 gap-4 cursor-pointer transform transition-all duration-300 hover:scale-105 hover:bg-emerald-600 hover:shadow-2xl hover:text-white animate-slide-in"
           >
             <span className="text-emerald-500 text-5xl">{ele.icon}</span>
-            <p className="text-white text-xl">{ele.text}</p>
+            <p className="text-white text-xl font-semibold">{ele.text}</p>
           </article>
         ))}
       </div>

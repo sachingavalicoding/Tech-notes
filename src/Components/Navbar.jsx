@@ -1,36 +1,20 @@
 import { FaReact } from "react-icons/fa";
 import { RiMenu5Line, RiCloseLine } from "react-icons/ri";
 import { FiSearch } from "react-icons/fi";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
-import { useNotes } from "../contexts/NotesContext";
+import { useNotes } from "../contexts/DataContext"; // Use the custom hook
 
 const Navbar = () => {
-  const { notes  ,  setFilter } = useNotes();
+  const {  filteredContent, filterContent } = useNotes(); // Get filteredContent and filterContent function
   const [isOpen, setIsOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
-  const [filteredNotes, setFilteredNotes] = useState([]);
 
-  // handle search logic
+  // Handle search query changes
   const handleSearch = (query) => {
     setSearchQuery(query);
-    if (query.trim() === "") {
-      setFilteredNotes(notes); 
-      setFilter(notes);
-    } else {
-      const filtered = notes.filter((note) =>
-        note.title.toLowerCase().includes(query.toLowerCase())
-      );
-      setFilteredNotes(filtered); 
-      setFilter(filtered);
-      console.log(filteredNotes);
-    }
+    filterContent(query); // Call the filterContent function to update filteredContent
   };
-
-  useEffect(() => {
-    setFilteredNotes(notes); 
-    setFilter(notes);
-  }, [notes, setFilter]);
 
   return (
     <>
@@ -53,15 +37,9 @@ const Navbar = () => {
             />
           </div>
           {isOpen ? (
-            <RiCloseLine
-              onClick={() => setIsOpen(false)}
-              className="cursor-pointer"
-            />
+            <RiCloseLine onClick={() => setIsOpen(false)} className="cursor-pointer" />
           ) : (
-            <RiMenu5Line
-              onClick={() => setIsOpen(true)}
-              className="cursor-pointer"
-            />
+            <RiMenu5Line onClick={() => setIsOpen(true)} className="cursor-pointer" />
           )}
         </div>
       </nav>
@@ -72,13 +50,13 @@ const Navbar = () => {
         } transition-transform duration-300 overflow-y-auto`}
       >
         <div className="w-full flex flex-col">
-          {filteredNotes.map((ele, index) => (
+          {filteredContent.notes.map((note) => (
             <Link
+              key={note.id}
+              to={`#${note.id}`}
               className="py-3 px-6 shadow shadow-slate-700 text-white"
-              key={index}
-              to={`#${ele.id}`}
             >
-              {ele.title}
+              {note.title}
             </Link>
           ))}
         </div>

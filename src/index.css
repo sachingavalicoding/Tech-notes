@@ -38,18 +38,19 @@ html {
 
 
 pre {
-    background-color: #2d2d2d; 
-    color: #f8f8f2; 
-    padding: 1rem;
-    border-radius: 8px;
-    font-family: "Poppins", serif;
-    font-size: 14px;
-    overflow-x: auto; 
-    line-height: 1.6; 
-    white-space: pre-wrap; 
-    border: 1px solid #444;
-  }
-  
+  background-color: #2d2d2d; 
+  color: #f8f8f2; 
+  padding: 16px 4px; 
+  margin: 0; 
+  border-radius: 8px;
+  font-family: "Poppins", serif;
+  font-size: 14px;
+  overflow-x: auto; 
+  line-height: 1.6; 
+  border: 1px solid #444;
+  text-indent: 0; 
+  white-space: pre;
+}
   pre .keyword {
     color: #66d9ef; 
   }

@@ -7,7 +7,7 @@ export const WebNotes = [
               id: 1,
               title: "What is React?",
               content: `
-                <div>
+                <div >
                   <h2 class="note-title">What is React?</h2>
                   <p class="note-description">
                     React is a <strong>JavaScript library</strong> for building user interfaces. It allows developers to create reusable UI components and manage the state of web applications efficiently.
@@ -192,7 +192,7 @@ export const WebNotes = [
               id: 1,
               title: "What is Program?",
               content: `
-                <div>
+                <div class="note">
                   <h2 class="note-title">What is React?</h2>
                   <p class="note-description">
                     React is a <strong>JavaScript library</strong> for building user interfaces. It allows developers to create reusable UI components and manage the state of web applications efficiently.
