@@ -77,4 +77,32 @@ pre {
   
 
   /*  icons  */
+/* Styling for the overall dark theme */
+
+
+/* Styling for the note container */
+.note-output {
+  margin-top: 20px;
+  background-color: rgb(16, 16, 16); /* Dark background for the note container */
+  border: 1px solid #444; /* Slightly lighter border for the container */
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Output heading */
+.note-output h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #fff; /* Light text for the heading */
+}
+
+/* Styling for the output display */
+.note-output pre {
+  background-color: #fff; /* White background for the output */
+  border: 1px solid #ccc; /* Border to separate the output */
+  border-radius: 8px;
+  font-size: 1.2rem;
+  color: #333; /* Dark text for output */
+}
+
 

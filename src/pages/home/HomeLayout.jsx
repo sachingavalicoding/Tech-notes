@@ -8,9 +8,9 @@ import TestimonialsSection from "./TestimonialsSection"
 const HomeLayout = () => {
   return (
     <div>
-      <HeroSection />
-      <FeatureSection />
+      <HeroSection /> 
       <LanguageGrid />
+      <FeatureSection />
       <AboutSection />
       <TestimonialsSection/>
       <Footer />
