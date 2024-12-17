@@ -16,7 +16,7 @@ const Footer = () => {
           {/* Subscribe Section */}
           <div className="flex flex-col items-center md:items-end">
             <h3 className="text-white font-bold mb-4">Subscribe</h3>
-            <form className="flex space-x-2">
+            <form className="flex space-x-2 flex-col gap-4 ">
               <input
                 type="email"
                 placeholder="Enter your email"
@@ -24,7 +24,7 @@ const Footer = () => {
               />
               <button
                 type="submit"
-                className="px-6 py-2 bg-emerald-500 text-white font-bold rounded-lg hover:bg-emerald-600 transition"
+                className="px-6 py-2 w-max bg-emerald-500 text-white font-bold rounded-lg hover:bg-emerald-600 transition"
               >
                 Subscribe
               </button>

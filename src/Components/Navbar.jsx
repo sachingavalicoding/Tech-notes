@@ -7,11 +7,11 @@ const Navbar = () => {
   return (
     <>
       {/* Top Navigation Bar */}
-      <nav className="w-full py-4 px-4 flex items-center justify-between bg-slate-950 z-20 shadow-md shadow-emerald-500">
+      <nav className="w-full py-5 px-2 md:px-6 flex items-center justify-between bg-slate-950 z-20 shadow-md shadow-emerald-500">
         {/* Logo Section */}
         <div className="flex items-center text-2xl gap-3">
           <BiLogoMicrosoftTeams className="text-emerald-500 text-4xl" />
-          <span className="text-white font-bold text-xl">Tech Notes </span>
+          <Link to={"/"}><span className="text-white font-bold text-xl">Tech Notes </span></Link>
         </div>
         {/* Navigation Actions */}
         <div className="flex items-center gap-6">
